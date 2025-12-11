@@ -141,10 +141,9 @@ If not found:
 
 ## 7. Example Workflow
 
-1. Generate identity pubkey  
-2. Register name  
-3. Resolve name  
-4. View owned names  
+1. Register name  
+2. Resolve name  
+3. View owned names  
 
 Example:
 
