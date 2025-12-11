@@ -13,7 +13,7 @@ mgbrt1qvphkue9tpls6lxza9mwx0fsfgj0gvtwd6hcu5y -> walletname
 
 ---
 
-## Total cost to create a mame
+## Total cost to create a name
 ```
 Registering an MNS name costs 1 MGB (burned) plus the normal network transaction fee.
 ```
