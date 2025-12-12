@@ -27,6 +27,50 @@ Consensus validation enforces:
 
 ---
 
+## Sending coins to an MNS name
+
+Once a name is registered, you can send coins to it exactly like a
+normal address.
+
+### Basic usage
+
+    sendtoaddress "walletname" 10
+
+The wallet automatically resolves:
+
+1.  The MNS name → owner's public key
+2.  The public key → a valid MGB receiving address
+3.  Then creates and broadcasts the transaction
+
+### Mixing MNS names and normal addresses
+
+    sendmany "" '{"walletname": 5, "mgbrt1qx...": 12.5}'
+
+Both formats work seamlessly.
+
+### Invalid or unknown names
+
+If you try to send to:
+
+-   an invalid MGB address
+-   or an MNS name that is not registered
+
+the wallet returns a clear error:
+
+    Invalid MGB address or unknown MNS name: walletname
+
+This prevents sending coins to non-existent names or malformed
+addresses.
+
+### Notes
+
+-   MNS names behave exactly like normal addresses once resolved
+-   All sends are protected by the wallet's standard transaction
+    validation
+-   No extra steps are required from the user
+
+---
+
 ## 4. RPC Commands
 
 ### 4.1 Register a new name
