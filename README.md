@@ -10,7 +10,7 @@ A name such as **walletname** becomes linked to a wallet identity key, enabling 
 ```
 mgbrt1qvphkue9tpls6lxza9mwx0fsfgj0gvtwd6hcu5y -> walletname
 ```
-
+MNS transactions bypass Dandelion for reliability (consensus-critical identity layer).
 ---
 
 ## Total cost to create a name
